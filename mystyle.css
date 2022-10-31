@@ -1,0 +1,245 @@
+ html{
+	 height :100%;
+	 background-image:url("background2.jpg");
+	 background-size: cover ;
+	background-repeat: no-repeat;
+	background-position: center;
+
+ }
+ 
+ 
+ body {
+	display :flex;
+	flex-direction :column;
+	position :relative;
+	min-height :100vh;
+	
+	
+
+}
+
+.img{
+	margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+.flex-main-content{
+	
+	display :flex ;
+	flex-direction :row;
+	justify-content:center;
+}
+
+.flex-main-content > div {
+	margin-right :20px;
+}
+
+
+.flex-main-content > div p{
+	font-family: 'Bangers', cursive;
+	color:black;
+}
+
+
+/*HEADER*/
+header {
+  background: #008489;
+  height: 66px;
+}
+
+header * {
+  color: white;
+}
+
+header .logo {
+  float: left;
+  height: inherit;
+  margin-left: 2em;
+}
+
+header .logo-text {
+  margin: 9px;
+  font-family: 'Candal', serif;
+}
+
+header .logo-text span {
+  color: yellow ;
+}
+
+header ul {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+header ul li {
+  float: left;
+  position: relative;
+}
+
+header ul li ul {
+  position: absolute;
+  top: 66px;
+  right: 0px;
+  width: 180px;
+  display: none;
+  z-index: 88888;
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+header ul li ul li {
+  width: 100%;
+}
+
+header ul li ul li a {
+  padding: 10px;
+  background: white;
+  color: #444;
+}
+
+header ul li ul li a.logout {
+  color: red;
+}
+
+header ul li ul li a:hover {
+  background: #d5d6d6;
+}
+
+header ul li a {
+  display: block;
+  padding: 21px;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  background: #006669;
+  transition: 0.5s;
+}
+
+header .menu-toggle {
+  display: none;
+}
+
+.main-content{
+	min-height:100%;
+}
+
+
+/*Photo Album */
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}	
+
+div.img:hover {
+    border: 3px solid #aaaaaa;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/*Register*/
+.text-input {
+  padding: .7rem 0.5rem;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  color: #444;
+  line-height: 1.5rem;
+  font-size: 1.2em;
+  font-family: 'Lora', serif;
+}
+
+.Authentication {
+  width: 30%;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+.Authentication h1{
+  text-align: center;
+}
+
+.Authentication form div {
+  margin-bottom: 10px;
+}
+
+.Authentication form p {
+  text-align: center;
+}
+
+.Authentication form p a {
+  text-decoration: underline;
+}
+
+
+/*	FOOTER */
+
+.footer-flex {
+	
+	margin-top:auto;
+   display :flex ;
+   justify-content :center;
+   position: static ;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black ;
+   color: white;
+   text-align: center;
+   
+}
+
+
+.footer-flex > div {
+	
+	width : 300px;
+	height :200 px;
+	text-align:center;
+	
+	
+}
+
+
+.footer-flex >div h1 {
+	color:white;
+	font-size:15px;
+}
+
+
+
+.footer-flex >div li {
+	
+	color:white;
+	font-size:15px;
+	text-align :center-left;
+}
+
+.footer-flex >div li a {
+	color :white ;
+	display:block;
+	text-decoration:none;
+}
+
